@@ -1,5 +1,7 @@
 package id.infinitelearning.KotlinSubmission.exercise5
 
+import id.infinitelearning.KotlinSubmission.exercise1.myProfile
+
 fun main() {
 
     /**
@@ -7,7 +9,7 @@ fun main() {
      * Buat variable dengan nama hero dibawah ini dan isi nilai variable tersebut dengan class Hero
      *
      */
-
+    var evaTesvara = Hero()
 
     /**
      * Latihan 2
@@ -15,6 +17,7 @@ fun main() {
      * Dan isi argumen-argumen / data dari parameter sesuai data diri Anda (Name, Age, Height)
      *
      */
+    evaTesvara.setProfile("Eva",20,168)
 
 
 
@@ -23,6 +26,8 @@ fun main() {
      * Tampilkan data profile dibawah ini, sebelum melakukan aktivitas
      *
      */
+
+    myProfile()
 
 
 
@@ -65,7 +70,41 @@ fun main() {
      * Jalankan aktivitas-aktivitas dengan memanggil fungsi-fungsi sesuai challenge diatas
      *
      */
+    var i = 1
+    while(i<=2){
+        evaTesvara.jalan()
+        i++
+    }
 
+    var j = 1
+    while(j<=4){
+        evaTesvara.lari()
+        j++
+    }
+
+    var k = 1
+    while(k<=2){
+        evaTesvara.makan()
+        k++
+    }
+
+    var l = 1
+    while(l<=2){
+        evaTesvara.minum()
+        l++
+    }
+
+    var m = 1
+    while(m<=7){
+        evaTesvara.lompat()
+        m++
+    }
+
+    var n = 1
+    while(n<=4){
+        evaTesvara.duduk()
+        n++
+    }
 
 
     /**
@@ -74,6 +113,6 @@ fun main() {
      *
      */
 
-
+    evaTesvara.profile()
 
 }

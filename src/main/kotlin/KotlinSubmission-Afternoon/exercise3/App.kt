@@ -17,4 +17,24 @@ fun main() {
      */
     // Buat di bawah sini
 
+    val score = 100
+    var nilai = 'c'
+    if(score>=0&&score<60){
+        nilai = 'E'
+    }else if(score>=60&&score<=69){
+        nilai = 'D'
+    }else if(score>=70&&score<=79){
+        nilai = 'C'
+    }else if(score>=80&&score<=89){
+        nilai = 'B'
+    }else if(score>=90&&score<=100){
+        nilai = 'A'
+    }
+
+    if(nilai == 'A'){
+        println("selamat! Anda mendapatkan nilai A")
+    }else{
+        println("Anda mendapatkan nilai $nilai")
+    }
+
 }
